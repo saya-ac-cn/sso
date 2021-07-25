@@ -1,0 +1,8 @@
+META-INF/spring-configuration-metadata.json
+com/xaaef/authorize/client/props/OAuth2ClientProperties$OAuth2ClientPropertiesBuilder.class
+com/xaaef/authorize/client/props/OAuth2ClientProperties.class
+com/xaaef/authorize/client/OAuth2ClientInterceptor.class
+com/xaaef/authorize/client/OAuth2ClientAutoConfiguration.class
+com/xaaef/authorize/client/AuthorizeService.class
+com/xaaef/authorize/client/AuthorizeServiceImpl.class
+com/xaaef/authorize/client/EnableOAuth2Client.class

@@ -1,0 +1,49 @@
+server:
+  port: 8098
+
+spring:
+  profiles:
+    active: prod
+  application:
+    name: oauth2-server
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  main:
+    allow-bean-definition-overriding: true
+
+  thymeleaf:
+    cache: false
+
+# OAuth2.0 Server 配置
+oauth2:
+  server:
+    exclude-path:
+      - "/tencent/*"                    # 腾讯社交平台(QQ和微信) 认证授权模式
+      - "/sms/*"                        # 手机短信验证码 模式接口
+      - "/client"                       # 客户端模式接口
+      - "/password"                     # 密码模式接口
+      - "/code"                         # 授权码模式，1.获取 code
+      - "/login"                        # 授权码模式，2.用户登录
+      - "/access_token"                 # 授权码模式，2.通过 code 获取 access_token
+      - "/captcha/codes/**"             # 验证码接口
+      - "/refresh"                      # 刷新 token
+      - "/login"                        # 刷新 token
+      - "/error"                        # 错误页面
+      - "/"                             # 首页
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: ${spring.application.name}
+    version: 1.0.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

@@ -1,0 +1,123 @@
+{
+  "groups": [
+    {
+      "name": "oauth2.server",
+      "type": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oauth2.server.code-expired",
+      "type": "java.lang.Integer",
+      "description": "授权码的 code 过期时间 单位(秒)",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": 600
+    },
+    {
+      "name": "oauth2.server.exclude-path",
+      "type": "java.util.List<java.lang.String>",
+      "description": "需要排除的URL",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.prompt-expired",
+      "type": "java.lang.Integer",
+      "description": "用户被挤下线，提示的过期时间 单位(秒)",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": 600
+    },
+    {
+      "name": "oauth2.server.qq-app-id",
+      "type": "java.lang.String",
+      "description": "腾讯QQ 开放平台 appId",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.qq-app-secret",
+      "type": "java.lang.String",
+      "description": "腾讯QQ 开放平台 AppSecret",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.qq-callback",
+      "type": "java.lang.String",
+      "description": "腾讯QQ 回调地址。如: http:\/\/authorize.xaaef.com\/auth\/tencent\/qq\/callback",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.refresh-token-expired",
+      "type": "java.lang.Integer",
+      "description": "refreshToken 过期时间，单位(秒)， 默认 3 小时",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.scope",
+      "type": "java.lang.String",
+      "description": "scope 类型",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": "read,write"
+    },
+    {
+      "name": "oauth2.server.secret",
+      "type": "java.lang.String",
+      "description": "秘钥",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": "2N321lIkh$*!IfNt4&5!YZykD$7@ApaM8r@b@r@&4CZ7eqKe!s"
+    },
+    {
+      "name": "oauth2.server.sms-code-expired",
+      "type": "java.lang.Integer",
+      "description": "短信验证码过期时间 单位(秒)",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": 600
+    },
+    {
+      "name": "oauth2.server.sso",
+      "type": "java.lang.Boolean",
+      "description": "单点登录，是否启用",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "oauth2.server.token-expired",
+      "type": "java.lang.Integer",
+      "description": "token 过期时间，单位(秒)，默认 1 小时",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": 3600
+    },
+    {
+      "name": "oauth2.server.token-header",
+      "type": "java.lang.String",
+      "description": "token 在请求头中的名称",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": "Authorization"
+    },
+    {
+      "name": "oauth2.server.token-type",
+      "type": "java.lang.String",
+      "description": "token 类型",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties",
+      "defaultValue": "Bearer "
+    },
+    {
+      "name": "oauth2.server.we-chat-app-id",
+      "type": "java.lang.String",
+      "description": "微信 开放平台 appId",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.we-chat-app-secret",
+      "type": "java.lang.String",
+      "description": "微信 开放平台 AppSecret",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.wechat-callback",
+      "type": "java.lang.String",
+      "description": "微信 回调地址。如: http:\/\/authorize.xaaef.com\/auth\/tencent\/wechat\/callback",
+      "sourceType": "ac.cn.saya.authorize.server.props.OAuth2ServerProperties"
+    }
+  ],
+  "hints": []
+}
